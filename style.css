@@ -1,0 +1,324 @@
+@font-face {
+  font-family: 'EBGaramond';
+  src: url(Medios/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Gistesy';
+  src: url(Medios/gistesy/Gistesy.ttf);
+}
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: inline-block;
+}
+.fuente1{
+  font-family: 'Gistesy', sans-serif;
+  text-align: center;
+  color: wheat;
+  text-shadow: 1px 2px 3px black;
+  z-index: 2;
+  margin: 0;
+  position: relative;
+}
+.fuente2{
+  font-family: 'EBGaramond', sans-serif;
+  text-align: center;
+  color: wheat;
+  text-shadow: 1px 2px 3px black;
+  z-index: 2;
+  margin: 0;
+  position: relative;
+}
+.titulos{
+  font-size: 5em;
+  font-weight: 100;
+  padding: 1% 0;
+}
+.texto{
+  font-size: 3em;
+}
+.separador{
+  width: 100vw;
+  height: auto;
+  padding: 1% 0;
+}
+audio{
+  z-index: 2;
+  display: inline-block;
+  position: relative;
+  opacity: .3;
+}
+h1{
+    font-size: 120px;
+    font-family: 'Gistesy';
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    padding-left: 50%;
+    text-shadow: 1px 1px 2px white;
+}
+h2{
+    font-size: 60px;
+    font-family: 'EBGaramond', cursive;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    color: white;
+    right: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 80%;
+    text-shadow: 1px 1px 2px black;
+}
+h4{
+    font-size: 40px;
+    font-family: 'EBGaramond', cursive;
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    padding-left: 50%;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    padding-top: 3%;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+.colorFondo{
+    background-color: #105A4C;
+}
+.imgPrincipal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+}
+.imgFondo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+}
+/*Cuenta regresiva*/
+.contenedor {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+    padding-left: 50%;
+  }
+  .cartel {
+    width: 109px;
+    height: 109px;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    display: inline-block;
+  }
+  .cartel>div{
+    font-size: 50px;
+    font-family: 'EBGaramond', sans serif;
+    animation: fade 3s;
+    line-height: 30px;
+    margin-top: 5px;
+  }
+  .cartel>div>h3 {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: normal;
+  }
+  .h3 {
+    bottom: 0;
+    margin: 0 auto ;
+    position: relative;
+    z-index: 1;
+    padding-left: 0;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+  }
+  .contenedor {
+    margin-top: 3%;
+  }
+  .contenido {
+    width: 80%;
+    margin: 0 auto;
+    z-index: 10;
+  }
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  .numeros {
+    font-family: 'EBGaramond', sans-serif;
+    font-size: 60px;
+    transition: .3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  .responsivo1 {
+    display: inline-block
+  }
+  .responsivo2 {
+    display: inline-block
+  }
+  @media (max-width: 450px) {  
+    .contenedor {
+      margin-top: 15%;
+    }
+    .banner {
+     margin-bottom: 30px; 
+    }
+    .cartel {
+      height: 99px;
+      width: 99px;
+    }
+    .cartel>div{
+      font-size: 45px;
+    }
+    .cartel>div>h3 {
+      font-size: 15px;
+      margin-top: 0px;
+    }
+  }
+  @keyframes fade {
+      0%   {
+        opacity: 0;
+    }
+      30%   {
+        opacity: 0;
+    }  
+      100% {
+        opacity: 1;
+    }
+  }
+/*Fin de Cuenta regresiva
+  Seccion Padres
+*/
+.papas{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 49.5% 49.5%;
+    grid-template-rows: 100px 80px 80px;
+    gap: 7% 0;
+    margin: 1% 0;
+    text-align: center;
+    padding: 3% 0;
+}
+.cruz{
+    width: 50px;
+}
+/*Fin de Seccion Padres
+Inicio seccion diosito
+*/
+
+.imgMarco{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/*
+Fin Seccion Padres
+Seccion padrinos
+*/
+.padrinos{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 49.5% 49.5%;
+    grid-template-rows: 60px 110px 60px 110px 60px 110px;
+    gap: 5% 0;
+    margin: 1% 0;
+    text-align: center;
+}
+/*
+Fin Seccion padrinos
+Seccion Itinerario
+*/
+.itinerario{
+  position: relative;
+  z-index: 2;
+  object-fit: contain;
+  height: 180vh;
+  width: 100vw;
+  }
+/*
+Fin Seccion Itinerario
+Seccion Evento
+*/
+.eventos{
+width: 100%;
+height: 80%;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: 80% 20%;
+}
+.evento{
+  width: 65%;
+  height: 75%;
+  background-color: white;
+  margin: auto;
+  opacity: .7;
+  display: inline;
+  border-radius: .5em;
+}
+a{
+  border: 1px solid #105A4C;
+  color: #105A4C;
+  background-color: white;
+  padding: 1%;
+  position: relative;
+  border-radius: .7em;
+  text-decoration: none;
+  width: 65%;
+  height: 50%;
+  margin: auto;
+  text-align: center;
+}
+.imgEvento{
+  width: .9em;
+  height: .9em;
+}
+/*
+Fin Seccion Evento
+Seccion Galeria
+*/
+.carousel{
+  height: 89%;
+  width: 80%;
+  z-index: 2;
+  display: flex;
+  margin: 0 auto;
+}
+.imgCarousel{
+  width: auto;
+  height: 900px;
+  object-fit: contain;
+}
+/*
+Fin Seccion Galeria
+Sección Recomendaciónes
+*/
+.regalo{
+  height: 5%;
+  width: 5%;
+  margin: 0 47.5%;
+}
+/*
+Fin Seccion Recomendaciónes
+Sección Asistencia
+*/
