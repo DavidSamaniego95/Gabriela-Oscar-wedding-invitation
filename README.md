@@ -1,2 +1,2 @@
-# Gabriela-Oscar-weeding-invitation
+# Gabriela-Oscar-wedding-invitation
 Invitación digital para la boda de Gabriela &amp; Oscar.
