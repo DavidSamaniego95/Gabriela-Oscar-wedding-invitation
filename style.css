@@ -10,9 +10,11 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     display: inline-block;
+    background: white;
+    font-size: 16px;
 }
 .fuente1{
-  font-family: 'Gistesy', sans-serif;
+  font-family: 'Gistesy';
   text-align: center;
   color: wheat;
   text-shadow: 1px 2px 3px black;
@@ -21,7 +23,7 @@ body {
   position: relative;
 }
 .fuente2{
-  font-family: 'EBGaramond', sans-serif;
+  font-family: 'EBGaramond';
   text-align: center;
   color: wheat;
   text-shadow: 1px 2px 3px black;
@@ -48,54 +50,21 @@ audio{
   position: relative;
   opacity: .3;
 }
-h1{
-    font-size: 120px;
-    font-family: 'Gistesy';
-    font-weight: bold;
-    z-index: 2;
-    text-align: center;
-    position: relative;
-    padding-left: 50%;
-    text-shadow: 1px 1px 2px white;
-}
 h2{
-    font-size: 60px;
-    font-family: 'EBGaramond', cursive;
-    z-index: 2;
-    position: relative;
-    text-align: center;
-    color: white;
     right: 15%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-left: 80%;
-    text-shadow: 1px 1px 2px black;
+    padding: 1% 0 1% 80%;
 }
 h4{
-    font-size: 40px;
-    font-family: 'EBGaramond', cursive;
-    z-index: 2;
-    text-align: center;
-    position: relative;
     padding-left: 50%;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    padding-top: 3%;
+    padding-top: 1%;
 }
 section{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: block;
 }
 .colorFondo{
     background-color: #105A4C;
-}
-.imgPrincipal{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    object-fit: cover;
 }
 .imgFondo{
     width: 100%;
@@ -121,8 +90,8 @@ section{
     display: inline-block;
   }
   .cartel>div{
-    font-size: 50px;
-    font-family: 'EBGaramond', sans serif;
+    font-size: 3.125em;
+    font-family: 'EBGaramond';
     animation: fade 3s;
     line-height: 30px;
     margin-top: 5px;
@@ -142,7 +111,7 @@ section{
     text-shadow: 1px 2px 3px black;
   }
   .contenedor {
-    margin-top: 3%;
+    margin-top: 1%;
   }
   .contenido {
     width: 80%;
@@ -161,8 +130,8 @@ section{
     font-size: 4.5rem;
   }
   .numeros {
-    font-family: 'EBGaramond', sans-serif;
-    font-size: 60px;
+    font-family: 'EBGaramond';
+    font-size: 3.75em;
     transition: .3s;
     animation-name: fade;
     animation-duration: 3s;
@@ -175,20 +144,22 @@ section{
   }
   @media (max-width: 450px) {  
     .contenedor {
-      margin-top: 15%;
+      margin: 0;
     }
     .banner {
      margin-bottom: 30px; 
     }
     .cartel {
-      height: 99px;
-      width: 99px;
+      height: 70px;
+      width: 70px;
+      padding: 0;
+      margin: 1%;
     }
     .cartel>div{
-      font-size: 45px;
+      font-size: 2.8125em;
     }
     .cartel>div>h3 {
-      font-size: 15px;
+      font-size: 0.9375em;
       margin-top: 0px;
     }
   }
@@ -223,7 +194,9 @@ section{
 /*Fin de Seccion Padres
 Inicio seccion diosito
 */
-
+.diosito{
+  margin: auto;
+}
 .imgMarco{
     z-index: 2;
     width: 100%;
@@ -249,6 +222,9 @@ Seccion padrinos
 Fin Seccion padrinos
 Seccion Itinerario
 */
+.seccionItinerario{
+  height: 200vh;
+}
 .itinerario{
   position: relative;
   z-index: 2;
@@ -289,6 +265,9 @@ a{
   margin: auto;
   text-align: center;
 }
+.ubicacion2{
+  display: none;
+}
 .imgEvento{
   width: .9em;
   height: .9em;
@@ -322,3 +301,61 @@ Sección Recomendaciónes
 Fin Seccion Recomendaciónes
 Sección Asistencia
 */
+
+/*
+Fin Sección Asistencia
+resposive
+*/
+@media (max-width: 450px) {
+  body{
+    font-size: 7px;
+  }
+  .cruz{
+    width: 25px;
+  }
+  .diosito{
+    padding: 50% 1%;
+  }
+  .imgMarco{
+    display: none;
+  }
+  .padrinos{
+    gap: 0;
+  }
+  .seccionItinerario{
+    height: 100vh;
+  }
+  .itinerario{
+    height: 90vh;
+  }
+  .eventos{
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+  .ubicacion{
+    display: none;
+  }
+  .ubicacion2{
+    display: inline-block;
+    height: auto;
+    width: 60%;
+    margin: 2% 24%;
+  }
+  .carousel{
+    height: auto;
+    width: 99%;
+    z-index: 2;
+    display: flex;
+    margin: 20% auto;
+  }
+  .imgCarousel{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .regalo{
+    height: auto;
+    width: 10%;
+    margin: 5% 45%;
+  }
+}

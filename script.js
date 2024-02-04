@@ -11,4 +11,4 @@ let countDown = new Date('may 25, 2024 17:30:00').getTime(),
         document.getElementById('horas').innerText = Math.floor((distance % (day)) / (hour)),
         document.getElementById('minutos').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('segundos').innerText = Math.floor((distance % (minute)) / second);
-    }, second)
+    }, second);
