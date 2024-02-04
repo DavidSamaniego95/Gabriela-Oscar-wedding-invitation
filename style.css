@@ -340,6 +340,9 @@ resposive
   .itinerario{
     height: 90vh;
   }
+   .itinerarioTamano{
+    font-size: 7em;
+  }
   .eventos{
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
