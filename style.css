@@ -16,7 +16,6 @@ body {
 .fuente1{
   font-family: 'Gistesy';
   text-align: center;
-  color: wheat;
   text-shadow: 1px 2px 3px black;
   z-index: 2;
   margin: 0;
@@ -25,7 +24,6 @@ body {
 .fuente2{
   font-family: 'EBGaramond';
   text-align: center;
-  color: wheat;
   text-shadow: 1px 2px 3px black;
   z-index: 2;
   margin: 0;
@@ -38,6 +36,12 @@ body {
 }
 .texto{
   font-size: 3em;
+}
+.color1{
+  color: white;
+}
+.color2{
+  color: #105A4C;
 }
 .separador{
   width: 100vw;
@@ -185,7 +189,6 @@ section{
     grid-template-rows: 100px 80px 80px;
     gap: 7% 0;
     margin: 1% 0;
-    text-align: center;
     padding: 3% 0;
 }
 .cruz{
@@ -246,17 +249,15 @@ grid-template-rows: 80% 20%;
 .evento{
   width: 65%;
   height: 75%;
-  background-color: white;
+  background-color: #ffffff80;
   margin: auto;
-  opacity: .7;
   display: inline;
   border-radius: .5em;
 }
 a{
   border: 1px solid #105A4C;
-  color: #105A4C;
   background-color: white;
-  padding: 1%;
+  padding: 0 1%;
   position: relative;
   border-radius: .7em;
   text-decoration: none;
@@ -310,11 +311,22 @@ resposive
   body{
     font-size: 7px;
   }
+  .margenes{
+    height: 100%;
+    width: 90%;
+    margin: auto auto;
+  }
   .cruz{
     width: 25px;
   }
+  .separador{
+    width: 100%;
+  }
   .diosito{
     padding: 50% 1%;
+  }
+  .imgFondo{
+    height: 100vh;
   }
   .imgMarco{
     display: none;
@@ -331,6 +343,10 @@ resposive
   .eventos{
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
+  }
+  .imgEvento{
+    width: 1.5em;
+    height: 1.5em;
   }
   .ubicacion{
     display: none;
