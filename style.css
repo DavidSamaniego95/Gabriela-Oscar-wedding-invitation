@@ -97,7 +97,7 @@ section{
     display: inline-block;
   }
   .cartel>div{
-    font-size: 3.125em;
+    font-size: 4em;
     font-family: 'EBGaramond';
     animation: fade 3s;
     line-height: 30px;
@@ -148,24 +148,6 @@ section{
   }
   .responsivo2 {
     display: inline-block
-  }
-  @media (max-width: 450px) {  
-    .contenedor {
-      margin: 0;
-    }
-    .banner {
-     margin-bottom: 30px; 
-    }
-    .cartel {
-      height: 70px;
-      width: 70px;
-      padding: 0;
-      margin: 1%;
-    }
-    .cartel>div>h3 {
-      font-size: 0.9375em;
-      margin-top: 0px;
-    }
   }
   @keyframes fade {
       0%   {
@@ -318,10 +300,18 @@ resposive
   body{
     font-size: 7px;
   }
+  .titulos{
+    padding: 2% 0;
+  }
+  .texto{
+    padding: 2% 0;
+  }
   .margenes{
     height: 100%;
     width: 90%;
-    margin: auto auto;
+    margin: auto;
+    display: flow;
+    padding-top: 5%;
   }
   .centrado{
     height: 90%;
@@ -345,15 +335,33 @@ resposive
   .novios{
     margin-top: 16em;;
   }
+  .banner {
+   margin-bottom: 30px; 
+  }
+  .cartel {
+    height: 80px;
+    width: 100px;
+    padding: 0;
+    margin: 1%;
+  }
+  .cartel>div>h3 {
+    font-size: 1em;
+    margin-top: 0px;
+  }
   .contenedor{
     padding-left: 0;
     padding-top: 15%;
+    margin: 0;
   }
   .responsivo1{
     display: block;
   }
   .responsivo2{
     display: block;
+  }
+  .papas{
+    padding: 5% 0;
+    gap: 0;
   }
   .cruz{
     width: 25px;
@@ -371,13 +379,13 @@ resposive
     display: none;
   }
   .padrinos{
-    gap: 0;
+    gap: 1% 0;
   }
   .seccionItinerario{
     height: 100vh;
   }
   .itinerario{
-    height: 90vh;
+    height: 83vh;
   }
   .itinerarioTamano{
     font-size: 7em;
@@ -422,6 +430,33 @@ resposive
     margin: 5% 45%;
   }
 }
+@media (height > 700px) and (width <1000px) {
+  .titulos{
+    font-size: 6em;
+    padding: 4% 0;
+  }
+  .texto{
+    font-size: 4em;
+    padding: 4% 0;
+  }
+  .papas{
+    gap: 3% 0;
+  }
+  .padrinos{
+    gap: 3% 0;
+    grid-template-rows: 80px 120px 80px 120px 80px 120px;
+  }
+  .itinerarioTamano{
+    font-size: 9em;
+  }
+  .itinerario{
+    height: 71vh;
+    object-fit: cover;
+  }
+  .ubicacion2 a{
+    margin-top: 6%;
+  }
+}
 @media all and (orientation:portrait){
   main{
     display: inline-block;
@@ -441,7 +476,7 @@ resposive
     position: fixed;
   }
   }
-  @media (width > 900px) and (orientation:landscape){
+  @media (width > 1000px) and (orientation:landscape){
     main{
       display: inline-block;
     }
