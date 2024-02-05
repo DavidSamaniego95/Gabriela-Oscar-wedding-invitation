@@ -11,14 +11,16 @@
     <script src="script.js"></script>
     <title>Invitación Boda G&S</title>
   </head>
-  <body>
-    <main>
-      <section>
-        <img src="Medios/Principal.jpeg" alt="fotoPareja" class="imgFondo">
-        <audio onload="reproductor();" id="musica" src="Medios/AUDIO-2024-02-02-20-59-38.mp3" type="audio/mp3" controls autoplay></audio>
-        <h2 class="fuente2 color1" style="font-size: 3.75em;">Nuestra Boda</h2>
-        <h1 class="fuente1" style="font-size: 7.5em; color: black; text-shadow: 1px 1px 2px white; padding-left: 50%;">Gabriela<br>&<br>Oscar</h1>
-        <h4 class="fuente2 color1" style="font-size: 2.5em;">25&#9829;05&#9829;2024</h4>
+  <body onload="reproductor()">
+    <main class="visible">
+      <section id="sectionPrincipal">
+        <img id="imgPrincipal" src="Medios/Principal.jpeg" alt="fotoPareja" class="imgFondo">
+        <audio id="musica" src="Medios/AUDIO-2024-02-02-20-59-38.mp3" type="audio/mp3" controls autoplay></audio>
+          <h2 class="fuente2 color1 tamano">Nuestra Boda</h2>
+        <div class="novios">
+          <h1 class="fuente1 color2" style="font-size: 7.5em; padding-left: 50%; text-shadow: 1px 2px 3px white;">Gabriela<br>&<br>Oscar</h1>
+          <h4 class="fuente2 color1" style="font-size: 2.5em;">25&#9829;05&#9829;2024</h4>
+        </div>
         <div class="contenedor"> 
           <div class="contenido">
             <div class="contador">
@@ -212,10 +214,16 @@
             </div>
           </section>
         </main>
+        <div id="landscape" class="noVisible">
+          <img id="landscapeImg" src="Medios/Principal.jpeg" alt="fotoPareja" class="imgFondo">
+            <h2 class="fuente2 color1 tamano" style="font-size: 1.5em;">Nuestra Boda</h2>
+            <h1 class="fuente1 color2" style="font-size: 3.5em; padding-left: 50%; text-shadow: 1px 2px 3px white;">Gabriela<br>&<br>Oscar</h1>
+            <h4 class="fuente2 color1" style="font-size: 2em; padding-left: 50%;">25&#9829;05&#9829;2024</h4>
+            <p class="fuente2  color1" style="font-size: 1.5em; padding-left: 50%;">Para ver la invitación gira el dispositivo.</p>
+        </div>
         <script>
           let audio=document.getElementById("musica");
           function reproductor() {
-            console.log(audio);
             audio.play();
           }
         </script>

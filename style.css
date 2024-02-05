@@ -48,6 +48,9 @@ body {
   height: auto;
   padding: 1% 0;
 }
+.tamano{
+  font-size: 3.75em;
+}
 audio{
   z-index: 2;
   display: inline-block;
@@ -158,9 +161,6 @@ section{
       width: 70px;
       padding: 0;
       margin: 1%;
-    }
-    .cartel>div{
-      font-size: 2.8125em;
     }
     .cartel>div>h3 {
       font-size: 0.9375em;
@@ -307,6 +307,13 @@ Sección Asistencia
 Fin Sección Asistencia
 resposive
 */
+#landscape{
+  width: 100vw;
+  height: 100vh;
+}
+#landscapeImg{
+  position: fixed;
+}
 @media (max-width: 450px) {
   body{
     font-size: 7px;
@@ -315,6 +322,32 @@ resposive
     height: 100%;
     width: 90%;
     margin: auto auto;
+  }
+  #sectionPrincipal{
+    background-image: url("Medios/fondoPrincipal.svg");
+  }
+  #imgPrincipal{
+    object-fit: scale-down;
+  }
+  h2{
+    padding: 0;
+    left: 0;
+  }
+  .tamano{
+    font-size: 7em;
+  }
+  .novios{
+    margin-top: 16em;;
+  }
+  .contenedor{
+    padding-left: 0;
+    padding-top: 15%;
+  }
+  .responsivo1{
+    display: block;
+  }
+  .responsivo2{
+    display: block;
   }
   .cruz{
     width: 25px;
@@ -340,7 +373,7 @@ resposive
   .itinerario{
     height: 90vh;
   }
-   .itinerarioTamano{
+  .itinerarioTamano{
     font-size: 7em;
   }
   .eventos{
@@ -355,10 +388,15 @@ resposive
     display: none;
   }
   .ubicacion2{
-    display: inline-block;
+    display: flex;
     height: auto;
-    width: 60%;
-    margin: 2% 24%;
+    width: auto;
+    margin: 2%;
+  }
+  a{
+    width: 100%;
+    height: 100%;
+
   }
   .carousel{
     height: auto;
@@ -378,3 +416,30 @@ resposive
     margin: 5% 45%;
   }
 }
+@media all and (orientation:portrait){
+  main{
+    display: inline-block;
+  }
+  #landscape{
+    display: none;
+  }
+}
+@media (min-width: 500px) and (orientation:landscape){
+  main{
+    display: none;
+  }
+  #landscape{
+    display:inline-block;
+  }
+  #landscapeImg{
+    position: fixed;
+  }
+  }
+  @media (width > 900px) and (orientation:landscape){
+    main{
+      display: inline-block;
+    }
+    #landscape{
+      display: none;
+    }
+  }

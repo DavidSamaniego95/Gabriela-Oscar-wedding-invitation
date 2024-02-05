@@ -12,3 +12,6 @@ let countDown = new Date('may 25, 2024 17:30:00').getTime(),
         document.getElementById('minutos').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('segundos').innerText = Math.floor((distance % (minute)) / second);
     }, second);
+screen.orientation.onchange = function () {
+  console.log(screen.orientation.type + " W: " +screen.width + " H: " +screen.height);
+}
