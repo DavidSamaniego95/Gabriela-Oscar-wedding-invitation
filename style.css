@@ -323,6 +323,12 @@ resposive
     width: 90%;
     margin: auto auto;
   }
+  .centrado{
+    height: 90%;
+    width: 100%;
+    display: inline-grid;
+    align-items: center;
+  }
   #sectionPrincipal{
     background-image: url("Medios/fondoPrincipal.svg");
   }
