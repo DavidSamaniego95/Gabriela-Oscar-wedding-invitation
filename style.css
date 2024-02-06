@@ -443,7 +443,7 @@ resposive
     gap: 3% 0;
   }
   .padrinos{
-    gap: 3% 0;
+    gap: 2% 0;
     grid-template-rows: 80px 120px 80px 120px 80px 120px;
   }
   .itinerarioTamano{
