@@ -1,232 +1,266 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Medios/anillo_fondo.png"/>
-    <link rel="stylesheet" href="reset.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Invitación Boda G&S</title>
-  </head>
-  <body>
-    <main>
-      <section id="sectionPrincipal">
-        <img id="imgPrincipal" src="Medios/Principal.jpeg" alt="fotoPareja" class="imgFondo">
-        <div class="divAudio">
-          <img id="muteado" onclick="reproducir()" src="Medios/muted.png" alt="muteado" class="imgAudio show">
-          <img id="sonido" onclick="pausar();" src="Medios/volumen.png" alt="sonido" class="imgAudio noShow">
-          <audio id="musica" src="Medios/AUDIO-2024-02-02-20-59-38.mp3" preload="auto" type="audio/mp3" loop></audio>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Medios/anillo_fondo.png" />
+  <link rel="stylesheet" href="reset.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Invitación Boda G&S</title>
+</head>
+
+<body>
+  <main>
+    <section id="sectionPrincipal">
+      <img id="imgPrincipal" src="Medios/Principal.jpeg" alt="fotoPareja" class="imgFondo">
+      <div class="divAudio">
+        <img id="muteado" onclick="reproducir()" src="Medios/muted.png" alt="muteado" class="imgAudio show">
+        <img id="sonido" onclick="pausar();" src="Medios/volumen.png" alt="sonido" class="imgAudio noShow">
+        <audio id="musica" src="Medios/AUDIO-2024-02-02-20-59-38.mp3" preload="auto" type="audio/mp3" loop></audio>
+      </div>
+      <div class="centrado">
+        <h2 class="fuente2 color1 tamano">Nuestra Boda</h2>
+        <div class="novios">
+          <h1 class="fuente1 color2" style="font-size: 7.5em; padding-left: 50%; text-shadow: 1px 2px 3px white;">
+            Gabriela<br>&<br>Oscar</h1>
+          <h4 class="fuente2 color1" style="font-size: 2.5em;">25&#9829;05&#9829;2024</h4>
         </div>
-        <div class="centrado">
-          <h2 class="fuente2 color1 tamano">Nuestra Boda</h2>
-          <div class="novios">
-            <h1 class="fuente1 color2" style="font-size: 7.5em; padding-left: 50%; text-shadow: 1px 2px 3px white;">Gabriela<br>&<br>Oscar</h1>
-            <h4 class="fuente2 color1" style="font-size: 2.5em;">25&#9829;05&#9829;2024</h4>
-          </div>
-          <div class="contenedor"> 
-            <div class="contenido">
-              <div class="contador">
-                <div class="responsivo1">
-                  <div class="cartel">
-                    <div id="dias" class="h3"></div>
-                    <div class="h3"><h3>Días</h3></div>
-                  </div>
-                  <div class="cartel">
-                    <div id="horas" class="h3"></div>
-                    <div class="h3"><h3>Horas</h3></div>
+        <div class="contenedor">
+          <div class="contenido">
+            <div class="contador">
+              <div class="responsivo1">
+                <div class="cartel">
+                  <div id="dias" class="h3"></div>
+                  <div class="h3">
+                    <h3>Días</h3>
                   </div>
                 </div>
-                <div class="responsivo2">
-                  <div class="cartel">
-                    <div id="minutos" class="h3"></div>
-                    <div class="h3"><h3>Minutos</h3></div>
+                <div class="cartel">
+                  <div id="horas" class="h3"></div>
+                  <div class="h3">
+                    <h3>Horas</h3>
                   </div>
-                  <div class="cartel">
-                    <div id="segundos" class="h3"></div>
-                    <div class="h3"><h3>Segundos</h3></div>
+                </div>
+              </div>
+              <div class="responsivo2">
+                <div class="cartel">
+                  <div id="minutos" class="h3"></div>
+                  <div class="h3">
+                    <h3>Minutos</h3>
+                  </div>
+                </div>
+                <div class="cartel">
+                  <div id="segundos" class="h3"></div>
+                  <div class="h3">
+                    <h3>Segundos</h3>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="colorFondo">
-        <div class="margenes">
-          <p class="fuente2 texto color1" style="padding-top: 1%;">Juntos hemos decidido decir "Sí" a un futuro lleno de amor & aventuras.</p>
-          <p class="fuente2 texto color1">Únete a nuestra historia.</p>
-          <p class="fuente1 titulos color1">Con la bendicion de Dios y nuestros padres.</p>
-          <img class="separador" src="Medios/separador.svg" alt="separador">
-          <p class="fuente2 texto color1">Tenemos el gusto de invitarlos a nuestra unión matrimonial.</p>
-          <div class="papas fuente2 texto color1">
-            <p style="font-weight: bolder; margin: auto;">PADRES DEL NOVIO</p>
-            <p style="font-weight: bolder; margin: auto;">PADRES DE LA NOVIA</p>
-            <p>Fructuoso Pérez Hernández</p>
-            <p><img class="cruz" src="Medios/cruz.png" alt="cruz">León García Espejo</p>
-            <p>Oralia Martinez Albarran</p>
-            <p>Delia Gonzalez Barragan</p>
-          </div>
+      </div>
+    </section>
+    <section class="colorFondo">
+      <div class="margenes">
+        <p class="fuente2 texto color1" style="padding-top: 1%;">Juntos hemos decidido decir "Sí" a un futuro lleno de
+          amor & aventuras.</p>
+        <p class="fuente2 texto color1">Únete a nuestra historia.</p>
+        <p class="fuente1 titulos color1">Con la bendicion de Dios y nuestros padres.</p>
+        <img class="separador" src="Medios/separador.svg" alt="separador">
+        <p class="fuente2 texto color1">Tenemos el gusto de invitarlos a nuestra unión matrimonial.</p>
+        <div class="papas fuente2 texto color1">
+          <p style="font-weight: bolder; margin: auto;">PADRES DEL NOVIO</p>
+          <p style="font-weight: bolder; margin: auto;">PADRES DE LA NOVIA</p>
+          <p>Fructuoso Pérez Hernández</p>
+          <p><img class="cruz" src="Medios/cruz.png" alt="cruz">León García Espejo</p>
+          <p>Oralia Martinez Albarran</p>
+          <p>Delia Gonzalez Barragan</p>
         </div>
-      </section>
-      <section>
-        <img src="Medios/manoAnillo.jpeg" alt="manoAnillo" class="imgFondo">
-        <img src="Medios/marcoFlores1.png" alt="marcoFlores" class="imgMarco">
-        <img src="Medios/marcoFlores2.png" alt="marcoFlores" class="imgMarco">
-        <div class="diosito margenes">
-              <p class="fuente2 texto color1" style="padding-top: 9%;">Yo sé los planes que tengo para ustedes, planes <br>
-                de bienestar, para darles un futuro y una <br>
-                  esperanza. Me buscarán y me encontrarán, <br>
-                  cuando me busquen de todo corazón.
-                </p>
-                <p class="fuente1 titulos color1" style="padding: 3% 35% 0 0;">Jeremias 29:11</p>
-              </div>
-            </section>
-            <section class="colorFondo">
-              <div class="margenes">
-                <p class="fuente1 titulos color1"">Nuestros padrinos:</p>
-                <img class="separador" src="Medios/separador.svg" alt="separador">
-                <div class="padrinos fuente2 texto color1">
-                  <p style="font-weight: bolder; margin: auto;">VELACIÓN</p>
-                  <p style="font-weight: bolder; margin: auto;">LAZO</p>
-                  <p>Roberto Pérez <br>Isabel Benitez</p>
-                  <p>Zacarias Albiter <br>Brickceida García</p>
-                  <p style="font-weight: bolder; margin: auto;">ANILLOS</p>
-                  <p style="font-weight: bolder; margin: auto;">ARRAS</p>
-                  <p>Saul Castelan <br>Ivette García</p>
-                  <p>Carlos Astorga <br>Irela Quiñonez</p>
-                  <p style="font-weight: bolder; margin: auto;">COJINES</p>
-                  <p style="font-weight: bolder; margin: auto;">BIBLIA Y ROSARIO</p>
-                  <p>Luis Jaimes <br>Betzabe Gutiérrez</p>
-                  <p>Humberto Martinez </p>
-                </div>
-              </section>
-              <section class="seccionItinerario">
-                <img src="Medios/fondoItInerario.svg" alt="fondoItinerario" class="imgFondo seccionItinerario">
-                <p class="fuente1 titulos color2 itinerarioTamano">Itinerario</p>
-                <div style="margin: 0 auto;">
-              <img class="itinerario" src="Medios/Itinerario.svg" alt="Itinerario">
-            </div>
-          </section>
-          <section class="colorFondo">
-            <div class="color1 margenes" style="width: 100%; height: 100%;">
-              <p class="fuente1 titulos" style="padding-top: 2%;">Evento</p>
-              <div class="eventos">
-                <div class="evento">
-                  <p class="fuente1 titulos" style="padding-top: 1%;">Ceremonia Religiosa</p>
-                  <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em;"><img class="imgEvento" src="Medios/fecha.png" alt="fecha"> 25, Mayo 2024.</p>
-                  <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em;"><img class="imgEvento" src="Medios/hora.png" alt="hora"> 17:30 horas.</p>
-                  <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em; padding-bottom: 0;"><img class="imgEvento" src="Medios/lugar.png" alt="lugar"> Iglesia de la Santa Cruz.</p>
-                  <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: 1.5em; padding-top: 0;">Aguacate 233, Zona Romantica, Puerto Vallarta.</p>
-                  <div class="ubicacion2">
-                    <a href="https://maps.app.goo.gl/zEu746HKxdXk2LDP8" class="color2" target="_blank" style="font-size: 2em;">VER UBICACIÓN</a>
-                  </div>
-                </div>
-                <div class="evento">
-                  <p class="fuente1 titulos" style="padding-top: 1%;">Recepcion</p>
-                  <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em;"><img class="imgEvento" src="Medios/fecha.png" alt="fecha"> 25, Mayo 2024.</p>
-                  <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em;"><img class="imgEvento" src="Medios/hora.png" alt="hora"> 19:00 horas.</p>
-                  <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em; padding-bottom: 0;"><img class="imgEvento" src="Medios/lugar.png" alt="lugar"> Jardín Terranova.</p>
-                  <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: 1.5em; padding-top: 0;">Guadalajara 261, Las Mojoneras, Puerto Vallarta.</p>
-                  <div class="ubicacion2">
-                    <a href="https://maps.app.goo.gl/HLxv9sENxMVfTbKJ6" class="color2" target="_blank" style="font-size: 2em;">VER UBICACIÓN</a>
-                  </div>
-                </div>
-                <a href="https://maps.app.goo.gl/zEu746HKxdXk2LDP8" target="_blank" style="font-size: 3em;" class="ubicacion color2">VER UBICACIÓN</a>
-                <a href="https://maps.app.goo.gl/HLxv9sENxMVfTbKJ6" target="_blank" style="font-size: 3em;" class="ubicacion color2">VER UBICACIÓN</a>
-              </div>
-            </div>
-          </section>
-          <section>
-            <img src="Medios/fondoItInerario.svg" alt="fondoItinerario" class="imgFondo">
-            <p class="fuente1 titulos color2">Galeria de fotos</p>
-            <div class="carousel">
-              <div id="main_carousel" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="0" class="active"></button>
-                  <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="1"></button>
-                  <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="2"></button>
-                  <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="3"></button>
-                  <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="4"></button>
-                  <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="5"></button>
-                  <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="6"></button>
-                  <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="7"></button>
-                </div>
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="Medios/ca1.jpeg" alt="carousel1" class="d-block imgCarousel">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Medios/ca2.jpeg" alt="carousel2" class="d-block imgCarousel">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Medios/ca3.jpeg" alt="carousel3" class="d-block imgCarousel">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Medios/ca4.jpeg" alt="carousel4" class="d-block imgCarousel">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Medios/ca5.jpeg" alt="carousel5" class="d-block imgCarousel">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Medios/ca6.jpeg" alt="carousel6" class="d-block imgCarousel">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Medios/ca7.jpeg" alt="carousel7" class="d-block imgCarousel">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Medios/ca8.jpeg" alt="carousel8" class="d-block imgCarousel">
-                  </div>
-                </div>
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#main_carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#main_carousel"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </section>
-        <section class="colorFondo">
-          <div class="color1 margenes">
-            <p class="fuente1 titulos" style="padding: .5% 0 0 0; font-size: 4em;">Dress code</p>
-            <img class="separador" style="padding: 0;" src="Medios/separador.svg" alt="separador">
-            <p class="fuente2 texto" style="padding: 0;">Mujeres: Vestido de noche, elegante. </p>
-            <p class="fuente2 texto" style="padding: 0;">Hombres: Traje, elegante.</p>
-            <p class="fuente2 texto" style="padding: 0;">“NO VERDE ESMERALDA”</p>
-            <p class="fuente1 titulos" style="padding: 0; font-size: 4em;">Puntualidad</p>
-            <img class="separador" style="padding: 0;" src="Medios/separador.svg" alt="separador">
-            <p class="fuente2 texto" style="padding: 0;">Tu compañía, es importante para nosotros, si no quieres perderte</p>
-            <p class="fuente2 texto" style="padding: 0;">ni un minuto de nuestro dia especial, por favor se puntual.</p>
-            <img class="regalo" src="Medios/Icono Regalo.svg" alt="imgRegalo">
-            <img class="separador" style="padding: 0;" src="Medios/separador.svg" alt="separador">
-            <p class="fuente2 texto" style="padding: 0;">Si deseas tener un detalle con nosotros, puedes hacerlo anónimamente</p>
-            <p class="fuente2 texto" style="padding: 0;">el día de la ceremonia, donde habrá sobres para que dejes tu obsequio.</p>
-          </div>
-        </section>
-        <section>
-          <img src="Medios/fondoItInerario.svg" alt="fondoItinerario" class="imgFondo">
-          <div class="color2 margenes" style="position: relative; z-index: 2;">
-            <p class="fuente1 titulos" style="padding-top: 2%;">Confirma tu asistencia</p>
-            <p class="fuente2 texto">Tu presencia es muy importante para nosotros, por eso te pedimos <br>
-              que confirmes si asistes o no, antes del 15 de Marzo. <br>
-              Una vez que confirmes tu asistencia, reservaremos el lugar que tenemos especialmente para ti.</p>
-            </div>
-            <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__e4x8Z1UMzJJT1VKUkwyQ0E0RUxCRzdFMkRQT1JLQy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh; z-index: 2; position: relative;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-          </section>
-        </main>
-        <div id="landscape">
-          <img id="landscapeImg" src="Medios/Principal.jpeg" alt="fotoPareja" class="imgFondo">
-            <h2 class="fuente2 color1 tamano" style="font-size: 1.5em;">Nuestra Boda</h2>
-            <h1 class="fuente1 color2" style="font-size: 3.5em; padding-left: 50%; text-shadow: 1px 2px 3px white;">Gabriela<br>&<br>Oscar</h1>
-            <h4 class="fuente2 color1" style="font-size: 2em; padding-left: 50%;">25&#9829;05&#9829;2024</h4>
-            <p class="fuente2  color1" style="font-size: 1.5em; padding-left: 50%;">Para ver la invitación gira el dispositivo.</p>
+      </div>
+    </section>
+    <section>
+      <img src="Medios/manoAnillo.jpeg" alt="manoAnillo" class="imgFondo">
+      <img src="Medios/marcoFlores1.png" alt="marcoFlores" class="imgMarco">
+      <img src="Medios/marcoFlores2.png" alt="marcoFlores" class="imgMarco">
+      <div class="diosito margenes">
+        <p class="fuente2 texto color1" style="padding-top: 9%;">Yo sé los planes que tengo para ustedes, planes <br>
+          de bienestar, para darles un futuro y una <br>
+          esperanza. Me buscarán y me encontrarán, <br>
+          cuando me busquen de todo corazón.
+        </p>
+        <p class="fuente1 titulos color1" style="padding: 3% 35% 0 0;">Jeremias 29:11</p>
+      </div>
+    </section>
+    <section class="colorFondo">
+      <div class="margenes">
+        <p class="fuente1 titulos color1"">Nuestros padrinos:</p>
+                <img class=" separador" src="Medios/separador.svg" alt="separador">
+        <div class="padrinos fuente2 texto color1">
+          <p style="font-weight: bolder; margin: auto;">VELACIÓN</p>
+          <p style="font-weight: bolder; margin: auto;">LAZO</p>
+          <p>Roberto Pérez <br>Isabel Benitez</p>
+          <p>Zacarias Albiter <br>Brickceida García</p>
+          <p style="font-weight: bolder; margin: auto;">ANILLOS</p>
+          <p style="font-weight: bolder; margin: auto;">ARRAS</p>
+          <p>Saul Castelan <br>Ivette García</p>
+          <p>Carlos Astorga <br>Irela Quiñonez</p>
+          <p style="font-weight: bolder; margin: auto;">COJINES</p>
+          <p style="font-weight: bolder; margin: auto;">BIBLIA Y ROSARIO</p>
+          <p>Luis Jaimes <br>Betzabe Gutiérrez</p>
+          <p>Humberto Martinez </p>
         </div>
-      </body>
-      </html>
+    </section>
+    <section class="seccionItinerario">
+      <img src="Medios/fondoItInerario.svg" alt="fondoItinerario" class="imgFondo seccionItinerario">
+      <p class="fuente1 titulos color2 itinerarioTamano">Itinerario</p>
+      <div style="margin: 0 auto;">
+        <img class="itinerario" src="Medios/Itinerario.svg" alt="Itinerario">
+      </div>
+    </section>
+    <section class="colorFondo">
+      <div class="color1 margenes" style="width: 100%; height: 100%;">
+        <p class="fuente1 titulos" style="padding-top: 2%;">Evento</p>
+        <div class="eventos">
+          <div class="evento">
+            <p class="fuente1 titulos" style="padding-top: 1%;">Ceremonia Religiosa</p>
+            <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em;"><img
+                class="imgEvento" src="Medios/fecha.png" alt="fecha"> 25, Mayo 2024.</p>
+            <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em;"><img
+                class="imgEvento" src="Medios/hora.png" alt="hora"> 17:30 horas.</p>
+            <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em; padding-bottom: 0;">
+              <img class="imgEvento" src="Medios/lugar.png" alt="lugar"> Iglesia de la Santa Cruz.
+            </p>
+            <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: 1.5em; padding-top: 0;">
+              Aguacate 233, Zona Romantica, Puerto Vallarta.</p>
+            <div class="ubicacion2">
+              <a href="https://maps.app.goo.gl/zEu746HKxdXk2LDP8" class="color2" target="_blank"
+                style="font-size: 2em;">VER UBICACIÓN</a>
+            </div>
+          </div>
+          <div class="evento">
+            <p class="fuente1 titulos" style="padding-top: 1%;">Recepcion</p>
+            <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em;"><img
+                class="imgEvento" src="Medios/fecha.png" alt="fecha"> 25, Mayo 2024.</p>
+            <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em;"><img
+                class="imgEvento" src="Medios/hora.png" alt="hora"> 19:00 horas.</p>
+            <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: .5em; padding-bottom: 0;">
+              <img class="imgEvento" src="Medios/lugar.png" alt="lugar"> Jardín Terranova.
+            </p>
+            <p class="fuente2 texto" style="font-size: 2em; text-align: left; padding-left: 1.5em; padding-top: 0;">
+              Guadalajara 261, Las Mojoneras, Puerto Vallarta.</p>
+            <div class="ubicacion2">
+              <a href="https://maps.app.goo.gl/HLxv9sENxMVfTbKJ6" class="color2" target="_blank"
+                style="font-size: 2em;">VER UBICACIÓN</a>
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/zEu746HKxdXk2LDP8" target="_blank" style="font-size: 3em;"
+            class="ubicacion color2">VER UBICACIÓN</a>
+          <a href="https://maps.app.goo.gl/HLxv9sENxMVfTbKJ6" target="_blank" style="font-size: 3em;"
+            class="ubicacion color2">VER UBICACIÓN</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <img src="Medios/fondoItInerario.svg" alt="fondoItinerario" class="imgFondo">
+      <p class="fuente1 titulos color2">Galeria de fotos</p>
+      <div class="carousel">
+        <div id="main_carousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="6"></button>
+            <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="7"></button>
+          </div>
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Medios/ca1.jpeg" alt="carousel1" class="d-block imgCarousel">
+            </div>
+            <div class="carousel-item">
+              <img src="Medios/ca2.jpeg" alt="carousel2" class="d-block imgCarousel">
+            </div>
+            <div class="carousel-item">
+              <img src="Medios/ca3.jpeg" alt="carousel3" class="d-block imgCarousel">
+            </div>
+            <div class="carousel-item">
+              <img src="Medios/ca4.jpeg" alt="carousel4" class="d-block imgCarousel">
+            </div>
+            <div class="carousel-item">
+              <img src="Medios/ca5.jpeg" alt="carousel5" class="d-block imgCarousel">
+            </div>
+            <div class="carousel-item">
+              <img src="Medios/ca6.jpeg" alt="carousel6" class="d-block imgCarousel">
+            </div>
+            <div class="carousel-item">
+              <img src="Medios/ca7.jpeg" alt="carousel7" class="d-block imgCarousel">
+            </div>
+            <div class="carousel-item">
+              <img src="Medios/ca8.jpeg" alt="carousel8" class="d-block imgCarousel">
+            </div>
+          </div>
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#main_carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#main_carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+    </section>
+    <section class="colorFondo">
+      <div class="color1 margenes">
+        <p class="fuente1 titulos reglas" style="padding: .5% 0 0 0;">Dress code</p>
+        <img class="separador" style="padding: 0;" src="Medios/separador.svg" alt="separador">
+        <p class="fuente2 texto" style="padding: 0;">Mujeres: Vestido de noche, elegante. </p>
+        <p class="fuente2 texto" style="padding: 0;">Hombres: Traje, elegante.</p>
+        <p class="fuente2 texto" style="padding: 0;">“NO VERDE ESMERALDA”</p>
+        <p class="fuente1 titulos reglas" style="padding: 0;">Puntualidad</p>
+        <img class="separador" style="padding: 0;" src="Medios/separador.svg" alt="separador">
+        <p class="fuente2 texto" style="padding: 0;">Tu compañía, es importante para nosotros, si no quieres perderte
+        </p>
+        <p class="fuente2 texto" style="padding: 0;">ni un minuto de nuestro dia especial, por favor se puntual.</p>
+        <img class="regalo" src="Medios/Icono Regalo.svg" alt="imgRegalo">
+        <img class="separador" style="padding: 0;" src="Medios/separador.svg" alt="separador">
+        <p class="fuente2 texto" style="padding: 0;">Si deseas tener un detalle con nosotros, puedes hacerlo
+          anónimamente</p>
+        <p class="fuente2 texto" style="padding: 0;">el día de la ceremonia, donde habrá sobres para que dejes tu
+          obsequio.</p>
+      </div>
+    </section>
+    <section>
+      <img src="Medios/fondoItInerario.svg" alt="fondoItinerario" class="imgFondo">
+      <div class="color2 margenes" style="position: relative; z-index: 2;">
+        <p class="fuente1 titulos">Confirma tu asistencia</p>
+        <p class="fuente2 texto">Tu presencia es muy importante para nosotros, por eso te pedimos <br>
+          que confirmes si asistes o no, antes del 15 de Marzo. <br>
+          Una vez que confirmes tu asistencia, reservaremos el lugar que tenemos especialmente para ti.</p>
+        <iframe
+          src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__e4x8Z1UMzJJT1VKUkwyQ0E0RUxCRzdFMkRQT1JLQy4u&embed=true"
+          frameborder="0" marginwidth="0" marginheight="0"
+          style="border: none; max-width:100%; max-height:100vh; z-index: 2; position: relative;" allowfullscreen
+          webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+      </div>
+    </section>
+  </main>
+  <div id="landscape">
+    <img id="landscapeImg" src="Medios/Principal.jpeg" alt="fotoPareja" class="imgFondo">
+    <h2 class="fuente2 color1 tamano" style="font-size: 1.5em;">Nuestra Boda</h2>
+    <h1 class="fuente1 color2" style="font-size: 3.5em; padding-left: 50%; text-shadow: 1px 2px 3px white;">
+      Gabriela<br>&<br>Oscar</h1>
+    <h4 class="fuente2 color1" style="font-size: 2em; padding-left: 50%;">25&#9829;05&#9829;2024</h4>
+    <p class="fuente2  color1" style="font-size: 1.5em; padding-left: 50%;">Para ver la invitación gira el dispositivo.
+    </p>
+  </div>
+</body>
+
+</html>

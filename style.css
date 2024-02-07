@@ -2,18 +2,21 @@
   font-family: 'EBGaramond';
   src: url(Medios/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
 }
+
 @font-face {
   font-family: 'Gistesy';
   src: url(Medios/gistesy/Gistesy.ttf);
 }
+
 body {
-    min-height: 100vh;
-    min-width: 100vw;
-    display: inline-block;
-    background: white;
-    font-size: 16px;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: inline-block;
+  background: white;
+  font-size: 16px;
 }
-.fuente1{
+
+.fuente1 {
   font-family: 'Gistesy';
   text-align: center;
   text-shadow: 1px 2px 3px black;
@@ -21,7 +24,8 @@ body {
   margin: 0;
   position: relative;
 }
-.fuente2{
+
+.fuente2 {
   font-family: 'EBGaramond';
   text-align: center;
   text-shadow: 1px 2px 3px black;
@@ -29,59 +33,72 @@ body {
   margin: 0;
   position: relative;
 }
-.titulos{
+
+.titulos {
   font-size: 5em;
   font-weight: 100;
   padding: 1% 0;
 }
-.texto{
+
+.texto {
   font-size: 3em;
 }
-.color1{
+
+.color1 {
   color: white;
 }
-.color2{
+
+.color2 {
   color: #105A4C;
 }
-.separador{
+
+.separador {
   width: 100vw;
   height: auto;
   padding: 1% 0;
 }
-.tamano{
+
+.tamano {
   font-size: 3.75em;
 }
-audio{
+
+audio {
   z-index: 2;
   display: inline-block;
   position: relative;
   opacity: .7;
 }
-h2{
-    right: 15%;
-    padding: 1% 0 1% 80%;
+
+h2 {
+  right: 15%;
+  padding: 1% 0 1% 80%;
 }
-h4{
-    padding-left: 50%;
-    padding-top: 1%;
+
+h4 {
+  padding-left: 50%;
+  padding-top: 1%;
 }
-section{
-    width: 100vw;
-    height: 100vh;
-    display: block;
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: block;
 }
-.colorFondo{
-    background-color: #105A4C;
+
+.colorFondo {
+  background-color: #105A4C;
 }
-.imgFondo{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    object-fit: cover;
+
+.imgFondo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
 }
-.divAudio{
-  height: 50px; 
+
+.divAudio {
+  height: 50px;
   width: 50px;
   background-color: wheat;
   z-index: 3;
@@ -89,165 +106,191 @@ section{
   border-radius: 10px;
   margin: 1% 0 0 1%;
 }
-.imgAudio{
+
+.imgAudio {
   width: 100%;
   height: 100%;
 }
-.show{
+
+.show {
   display: inline;
 }
-.noShow{
+
+.noShow {
   display: none;
 }
+
 /*Cuenta regresiva*/
 .contenedor {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: #000000;
-    text-align: center;
-    padding-left: 50%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  text-align: center;
+  padding-left: 50%;
+}
+
+.cartel {
+  width: 109px;
+  height: 109px;
+  padding: 10px 0px 5px 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+.cartel>div {
+  font-size: 4em;
+  font-family: 'EBGaramond';
+  animation: fade 3s;
+  line-height: 30px;
+  margin-top: 5px;
+}
+
+.cartel>div>h3 {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.h3 {
+  bottom: 0;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding-left: 0;
+  color: white;
+  text-shadow: 1px 2px 3px black;
+}
+
+.contenedor {
+  margin-top: 1%;
+}
+
+.contenido {
+  width: 80%;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.numeros {
+  font-family: 'EBGaramond';
+  font-size: 3.75em;
+  transition: .3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+.responsivo1 {
+  display: inline-block
+}
+
+.responsivo2 {
+  display: inline-block
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
   }
-  .cartel {
-    width: 109px;
-    height: 109px;
-    padding: 10px 0px 5px 0px;
-    text-align: center;
-    display: inline-block;
+
+  30% {
+    opacity: 0;
   }
-  .cartel>div{
-    font-size: 4em;
-    font-family: 'EBGaramond';
-    animation: fade 3s;
-    line-height: 30px;
-    margin-top: 5px;
+
+  100% {
+    opacity: 1;
   }
-  .cartel>div>h3 {
-    margin-top: 15px;
-    font-size: 25px;
-    font-weight: normal;
-  }
-  .h3 {
-    bottom: 0;
-    margin: 0 auto ;
-    position: relative;
-    z-index: 1;
-    padding-left: 0;
-    color: white;
-    text-shadow: 1px 2px 3px black;
-  }
-  .contenedor {
-    margin-top: 1%;
-  }
-  .contenido {
-    width: 80%;
-    margin: 0 auto;
-    z-index: 10;
-  }
-  li {
-    display: inline-block;
-    font-size: 1.5em;
-    list-style-type: none;
-    padding: 1em;
-    text-transform: uppercase;
-  }
-  li span {
-    display: block;
-    font-size: 4.5rem;
-  }
-  .numeros {
-    font-family: 'EBGaramond';
-    font-size: 3.75em;
-    transition: .3s;
-    animation-name: fade;
-    animation-duration: 3s;
-  }
-  .responsivo1 {
-    display: inline-block
-  }
-  .responsivo2 {
-    display: inline-block
-  }
-  @keyframes fade {
-      0%   {
-        opacity: 0;
-    }
-      30%   {
-        opacity: 0;
-    }  
-      100% {
-        opacity: 1;
-    }
-  }
+}
+
 /*Fin de Cuenta regresiva
   Seccion Padres
 */
-.papas{
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: 49.5% 49.5%;
-    grid-template-rows: 100px 80px 80px;
-    gap: 7% 0;
-    margin: 1% 0;
-    padding: 3% 0;
+.papas {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 49.5% 49.5%;
+  grid-template-rows: 100px 80px 80px;
+  gap: 7% 0;
+  margin: 1% 0;
+  padding: 3% 0;
 }
-.cruz{
-    width: 50px;
+
+.cruz {
+  width: 50px;
 }
+
 /*Fin de Seccion Padres
 Inicio seccion diosito
 */
-.diosito{
+.diosito {
   margin: auto;
 }
-.imgMarco{
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+
+.imgMarco {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 /*
 Fin Seccion Padres
 Seccion padrinos
 */
-.padrinos{
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: 49.5% 49.5%;
-    grid-template-rows: 60px 110px 60px 110px 60px 110px;
-    gap: 5% 0;
-    margin: 1% 0;
-    text-align: center;
+.padrinos {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 49.5% 49.5%;
+  grid-template-rows: 60px 110px 60px 110px 60px 110px;
+  gap: 5% 0;
+  margin: 1% 0;
+  text-align: center;
 }
+
 /*
 Fin Seccion padrinos
 Seccion Itinerario
 */
-.seccionItinerario{
+.seccionItinerario {
   height: 200vh;
 }
-.itinerario{
+
+.itinerario {
   position: relative;
   z-index: 2;
   object-fit: contain;
   height: 180vh;
   width: 100vw;
-  }
+}
+
 /*
 Fin Seccion Itinerario
 Seccion Evento
 */
-.eventos{
-width: 100%;
-height: 80%;
-display: grid;
-grid-template-columns: 50% 50%;
-grid-template-rows: 80% 20%;
+.eventos {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80% 20%;
 }
-.evento{
+
+.evento {
   width: 65%;
   height: 75%;
   background-color: #ffffff80;
@@ -255,7 +298,8 @@ grid-template-rows: 80% 20%;
   display: inline;
   border-radius: .5em;
 }
-a{
+
+a {
   border: 1px solid #105A4C;
   background-color: white;
   padding: 0 1%;
@@ -267,239 +311,332 @@ a{
   margin: auto;
   text-align: center;
 }
-.ubicacion2{
+
+.ubicacion2 {
   display: none;
 }
-.imgEvento{
+
+.imgEvento {
   width: .9em;
   height: .9em;
 }
+
 /*
 Fin Seccion Evento
 Seccion Galeria
 */
-.carousel{
+.carousel {
   height: 89%;
   width: 80%;
   z-index: 2;
   display: flex;
   margin: 0 auto;
 }
-.imgCarousel{
+
+.imgCarousel {
   width: auto;
   height: 900px;
   object-fit: contain;
 }
+
 /*
 Fin Seccion Galeria
 Sección Recomendaciónes
 */
-.regalo{
+.reglas{
+  font-size: 4em;
+}
+.regalo {
   height: 5%;
   width: 5%;
   margin: 0 47.5%;
 }
+
 /*
 Fin Seccion Recomendaciónes
 Sección Asistencia
 */
-
+iframe{
+  width: 50%;
+  height: 525px;
+  padding-top: 1%;
+  display: block;
+  margin: 0 auto;
+}
 /*
 Fin Sección Asistencia
 resposive
 */
-#landscape{
+#landscape {
   width: 100vw;
   height: 100vh;
 }
-#landscapeImg{
+
+#landscapeImg {
   position: fixed;
 }
+
 @media (max-width: 450px) {
-  body{
+  body {
     font-size: 7px;
   }
-  .titulos{
+
+  .titulos {
     padding: 2% 0;
   }
-  .texto{
+
+  .texto {
     padding: 2% 0;
   }
-  .margenes{
+
+  .margenes {
     height: 100%;
     width: 90%;
     margin: auto;
     display: flow;
     padding-top: 5%;
   }
-  .centrado{
+
+  .centrado {
     height: 90%;
     width: 100%;
     display: inline-grid;
     align-items: center;
   }
-  #sectionPrincipal{
+
+  #sectionPrincipal {
     background-image: url("Medios/fondoPrincipal.svg");
   }
-  #imgPrincipal{
+
+  #imgPrincipal {
     object-fit: scale-down;
   }
-  h2{
+
+  h2 {
     padding: 0;
     left: 0;
   }
-  .tamano{
+
+  .tamano {
     font-size: 7em;
   }
-  .novios{
-    margin-top: 16em;;
+
+  .novios {
+    margin-top: 16em;
+    ;
   }
+
   .banner {
-   margin-bottom: 30px; 
+    margin-bottom: 30px;
   }
+
   .cartel {
     height: 80px;
     width: 100px;
     padding: 0;
     margin: 1%;
   }
+
   .cartel>div>h3 {
     font-size: 1em;
     margin-top: 0px;
   }
-  .contenedor{
+
+  .contenedor {
     padding-left: 0;
     padding-top: 15%;
     margin: 0;
   }
-  .responsivo1{
+
+  .responsivo1 {
     display: block;
   }
-  .responsivo2{
+
+  .responsivo2 {
     display: block;
   }
-  .papas{
+
+  .papas {
     padding: 5% 0;
     gap: 0;
   }
-  .cruz{
+
+  .cruz {
     width: 25px;
   }
-  .separador{
+
+  .separador {
     width: 100%;
   }
-  .diosito{
+
+  .diosito {
     padding: 50% 1%;
   }
-  .imgFondo{
+
+  .imgFondo {
     height: 100vh;
   }
-  .imgMarco{
+
+  .imgMarco {
     display: none;
   }
-  .padrinos{
+
+  .padrinos {
     gap: 1% 0;
   }
-  .seccionItinerario{
+
+  .seccionItinerario {
     height: 100vh;
   }
-  .itinerario{
+
+  .itinerario {
     height: 83vh;
   }
-  .itinerarioTamano{
+
+  .itinerarioTamano {
     font-size: 7em;
   }
-  .eventos{
+
+  .eventos {
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
   }
-  .imgEvento{
+
+  .imgEvento {
     width: 1.5em;
     height: 1.5em;
   }
-  .ubicacion{
+
+  .ubicacion {
     display: none;
   }
-  .ubicacion2{
+
+  .ubicacion2 {
     display: flex;
     height: auto;
     width: auto;
     margin: 2%;
   }
-  a{
+
+  a {
     width: 100%;
     height: 100%;
 
   }
-  .carousel{
+
+  .carousel {
     height: auto;
     width: 99%;
     z-index: 2;
     display: flex;
     margin: 20% auto;
   }
-  .imgCarousel{
+
+  .imgCarousel {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  .regalo{
+
+  .regalo {
     height: auto;
     width: 10%;
     margin: 5% 45%;
   }
 }
+
 @media (height > 700px) and (width <1000px) {
-  .titulos{
+  .titulos {
     font-size: 6em;
     padding: 4% 0;
   }
-  .texto{
+
+  .texto {
     font-size: 4em;
     padding: 4% 0;
   }
-  .papas{
+
+  .papas {
     gap: 3% 0;
   }
-  .padrinos{
+
+  .padrinos {
     gap: 2% 0;
     grid-template-rows: 80px 120px 80px 120px 80px 120px;
   }
-  .itinerarioTamano{
+
+  .itinerarioTamano {
     font-size: 9em;
   }
-  .itinerario{
+
+  .itinerario {
     height: 71vh;
     object-fit: cover;
   }
-  .ubicacion2 a{
+
+  .ubicacion2 a {
     margin-top: 6%;
   }
 }
-@media all and (orientation:portrait){
-  main{
+
+@media all and (orientation:portrait) {
+  main {
     display: inline-block;
   }
-  #landscape{
+
+  #landscape {
     display: none;
   }
 }
-@media (min-width: 500px) and (orientation:landscape){
-  main{
+@media (width > 1300px) and (height <800px) {
+  .texto{
+    font-size: 2.5em;
+  }
+  .titulos{
+    font-size: 4.5em;
+  }
+  .padrinos{
+    gap: 1%;
+  }
+  .reglas{
+    font-size: 3.5em;
+  }
+  .margenes {
+    height: 100%;
+    width: 95%;
+    margin: auto;
+    display: flow;
+    padding-top: 1%;
+  }
+  .separador {
+    width: 100%;
+    height: auto;
+    padding: 1% 0;
+  }
+  iframe{
+    height: 375px;
+  }
+}
+@media (min-width: 500px) and (orientation:landscape) {
+  main {
     display: none;
   }
-  #landscape{
-    display:inline-block;
+
+  #landscape {
+    display: inline-block;
   }
-  #landscapeImg{
+
+  #landscapeImg {
     position: fixed;
   }
+}
+
+@media (width > 1000px) and (orientation:landscape) {
+  main {
+    display: inline-block;
   }
-  @media (width > 1000px) and (orientation:landscape){
-    main{
-      display: inline-block;
-    }
-    #landscape{
-      display: none;
-    }
+
+  #landscape {
+    display: none;
   }
+}
