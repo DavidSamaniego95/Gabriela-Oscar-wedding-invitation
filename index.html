@@ -11,11 +11,15 @@
     <script src="script.js"></script>
     <title>Invitación Boda G&S</title>
   </head>
-  <body onload="reproductor()">
+  <body>
     <main>
       <section id="sectionPrincipal">
         <img id="imgPrincipal" src="Medios/Principal.jpeg" alt="fotoPareja" class="imgFondo">
-        <audio id="musica" src="Medios/AUDIO-2024-02-02-20-59-38.mp3" type="audio/mp3" controls autoplay></audio>
+        <div class="divAudio">
+          <img id="muteado" onclick="reproducir()" src="Medios/muted.png" alt="muteado" class="imgAudio show">
+          <img id="sonido" onclick="pausar();" src="Medios/volumen.png" alt="sonido" class="imgAudio noShow">
+          <audio id="musica" src="Medios/AUDIO-2024-02-02-20-59-38.mp3" preload="auto" type="audio/mp3" loop></audio>
+        </div>
         <div class="centrado">
           <h2 class="fuente2 color1 tamano">Nuestra Boda</h2>
           <div class="novios">
@@ -214,6 +218,7 @@
               que confirmes si asistes o no, antes del 15 de Marzo. <br>
               Una vez que confirmes tu asistencia, reservaremos el lugar que tenemos especialmente para ti.</p>
             </div>
+            <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__e4x8Z1UMzJJT1VKUkwyQ0E0RUxCRzdFMkRQT1JLQy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh; z-index: 2; position: relative;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
           </section>
         </main>
         <div id="landscape">
@@ -223,11 +228,5 @@
             <h4 class="fuente2 color1" style="font-size: 2em; padding-left: 50%;">25&#9829;05&#9829;2024</h4>
             <p class="fuente2  color1" style="font-size: 1.5em; padding-left: 50%;">Para ver la invitación gira el dispositivo.</p>
         </div>
-        <script>
-          let audio=document.getElementById("musica");
-          function reproductor() {
-            audio.play();
-          }
-        </script>
       </body>
       </html>
