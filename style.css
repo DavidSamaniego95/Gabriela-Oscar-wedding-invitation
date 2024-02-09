@@ -123,10 +123,12 @@ section {
 }
 
 .centrado {
-  height: 90%;
+  height: 100%;
   width: 100%;
   display: inline-grid;
   align-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 7.5em 34.375em 15.625em;
 }
 
 /*Cuenta regresiva*/
@@ -142,7 +144,6 @@ section {
 .cartel {
   width: 6.8125em;
   height: 6.8125em;
-  padding: 0.625em 0 0.3125em 0;
   text-align: center;
   display: inline-block;
 }
@@ -152,7 +153,6 @@ section {
   font-family: 'EBGaramond';
   animation: fade 3s;
   line-height: 1.875em;
-  margin-top: 0.3125em;
 }
 
 .cartel>div>h3 {
@@ -176,10 +176,6 @@ section {
 #minutos,
 #segundos {
   font-size: 4em;
-}
-
-.contenedor {
-  margin-top: 1%;
 }
 
 .contenido {
@@ -284,12 +280,12 @@ Fin Seccion padrinos
 Seccion Itinerario
 */
 .divItinerario {
-  height: 80vh;
+  height: 170vh;
   width: 100vw;
   margin: auto;
   display: grid;
   grid-template-columns: auto 5px auto;
-  grid-template-rows: 3.125em 21.875em 21.875em 21.875em 21.875em 9.375em 15.625em;
+  grid-template-rows: 3em 20em 20em 20em 20em 8em 15em;
 }
 
 .seccionItinerario {
@@ -443,9 +439,9 @@ Sección Recomendaciónes
 }
 
 .regalo {
-  height: 5%;
-  width: 5%;
-  margin: 0 47.5%;
+  height: 4%;
+  width: 4%;
+  margin: 0 48.5%;
 }
 
 /*
@@ -454,8 +450,8 @@ Sección Asistencia
 */
 iframe {
   width: 50%;
-  height: 38em;
-  padding-top: 1%;
+  height: 35em;
+  padding: 1% 0;
   display: block;
   margin: 0 auto;
 }
@@ -520,6 +516,10 @@ Moviles
 
   .tamano {
     font-size: 7em;
+  }
+
+  .centrado{
+    grid-template-rows: 10em 45em 25em;
   }
 
   .novios {
@@ -688,6 +688,10 @@ Moviles
     margin-top: 18em;
   }
 
+  .centrado{
+    grid-template-rows: 10em 50em 25em;
+  }
+
   .contenedor {
     padding-left: 0;
     padding-top: 6%;
@@ -844,6 +848,10 @@ Moviles
 
   .tamano {
     font-size: 6em;
+  }
+
+  .centrado{
+    grid-template-rows: 10em 50em 23em;
   }
 
   .novios {
@@ -1172,7 +1180,7 @@ Moviles
   }
 
   .centrado{
-    padding-top: 7%;
+    padding-top: 1%;
   }
 
   #sectionPrincipal {
@@ -1190,6 +1198,10 @@ Moviles
 
   .tamano {
     font-size: 7em;
+  }
+
+  .centrado{
+    grid-template-rows: 15em 45em 25em;
   }
 
   .novios {
