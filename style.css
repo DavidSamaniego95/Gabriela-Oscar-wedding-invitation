@@ -13,7 +13,7 @@ body {
   min-width: 100vw;
   display: inline-block;
   background: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .fuente1 {
@@ -42,6 +42,7 @@ body {
 
 .texto {
   font-size: 3em;
+  z-index: 3;
 }
 
 .color1 {
@@ -98,12 +99,12 @@ section {
 }
 
 .divAudio {
-  height: 50px;
-  width: 50px;
+  height: 3.125em;
+  width: 3.125em;
   background-color: wheat;
   z-index: 3;
   position: fixed;
-  border-radius: 10px;
+  border-radius: 0.625em;
   margin: 1% 0 0 1%;
 }
 
@@ -120,6 +121,13 @@ section {
   display: none;
 }
 
+.centrado {
+  height: 90%;
+  width: 100%;
+  display: inline-grid;
+  align-items: center;
+}
+
 /*Cuenta regresiva*/
 .contenedor {
   box-sizing: border-box;
@@ -131,24 +139,24 @@ section {
 }
 
 .cartel {
-  width: 109px;
-  height: 109px;
-  padding: 10px 0px 5px 0px;
+  width: 6.8125em;
+  height: 6.8125em;
+  padding: 0.625em 0 0.3125em 0;
   text-align: center;
   display: inline-block;
 }
 
 .cartel>div {
-  font-size: 4em;
+  font-size: 1.2em;
   font-family: 'EBGaramond';
   animation: fade 3s;
-  line-height: 30px;
-  margin-top: 5px;
+  line-height: 1.875em;
+  margin-top: 0.3125em;
 }
 
 .cartel>div>h3 {
-  margin-top: 15px;
-  font-size: 25px;
+  margin-top: 0.9375em;
+  font-size: 1.5625em;
   font-weight: normal;
 }
 
@@ -160,6 +168,13 @@ section {
   padding-left: 0;
   color: white;
   text-shadow: 1px 2px 3px black;
+}
+
+#dias,
+#horas,
+#minutos,
+#segundos {
+  font-size: 4em;
 }
 
 .contenedor {
@@ -223,14 +238,15 @@ li span {
   width: 100%;
   height: auto;
   grid-template-columns: 49.5% 49.5%;
-  grid-template-rows: 100px 80px 80px;
+  grid-template-rows: 4em 2em 2em;
   gap: 7% 0;
   margin: 1% 0;
-  padding: 3% 0;
+  padding: 0;
 }
 
 .cruz {
-  width: 50px;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 /*Fin de Seccion Padres
@@ -255,9 +271,9 @@ Seccion padrinos
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-columns: 49.5% 49.5%;
-  grid-template-rows: 60px 110px 60px 110px 60px 110px;
-  gap: 5% 0;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2em 2.9em 2em 2.9em 2em 2.9em;
+  gap: 2% 0;
   margin: 1% 0;
   text-align: center;
 }
@@ -266,6 +282,15 @@ Seccion padrinos
 Fin Seccion padrinos
 Seccion Itinerario
 */
+.divItinerario {
+  height: 80vh;
+  width: 100vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 5px auto;
+  grid-template-rows: 3.125em 21.875em 21.875em 21.875em 21.875em 9.375em 15.625em;
+}
+
 .seccionItinerario {
   height: 200vh;
 }
@@ -276,6 +301,75 @@ Seccion Itinerario
   object-fit: contain;
   height: 180vh;
   width: 100vw;
+}
+
+.itinerarioTamano {
+  font-size: 9em;
+  padding: 1% 0;
+}
+
+.iconosItinerario {
+  width: 12.5em;
+  height: 12.5em;
+  display: block;
+  margin: 0 auto;
+}
+
+.lineaVertical {
+  width: 0.3125em;
+  height: 100%;
+  background-color: black;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+}
+
+.lineaHorizontal {
+  height: 0.3125em;
+  width: 20%;
+  background-color: black;
+  z-index: 2;
+  position: relative;
+  left: 124%;
+  bottom: 5%;
+}
+
+.lineaHorizontalDer {
+  height: 0.3125em;
+  width: 20%;
+  background-color: black;
+  z-index: 2;
+  position: relative;
+  right: 44%;
+  bottom: 5%;
+}
+
+.informacion {
+  width: 60%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.hora {
+  width: 18.75em;
+  height: 4.6875em;
+  z-index: 2;
+  position: relative;
+  display: block;
+  margin: auto auto;
+}
+
+.finEvento {
+  width: 25%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  grid-column: span 3;
 }
 
 /*
@@ -335,7 +429,7 @@ Seccion Galeria
 
 .imgCarousel {
   width: auto;
-  height: 900px;
+  height: 56.25em;
   object-fit: contain;
 }
 
@@ -343,9 +437,10 @@ Seccion Galeria
 Fin Seccion Galeria
 Sección Recomendaciónes
 */
-.reglas{
-  font-size: 4em;
+.reglas {
+  font-size: 4.5em;
 }
+
 .regalo {
   height: 5%;
   width: 5%;
@@ -356,13 +451,14 @@ Sección Recomendaciónes
 Fin Seccion Recomendaciónes
 Sección Asistencia
 */
-iframe{
+iframe {
   width: 50%;
-  height: 525px;
+  height: 38em;
   padding-top: 1%;
   display: block;
   margin: 0 auto;
 }
+
 /*
 Fin Sección Asistencia
 resposive
@@ -376,32 +472,27 @@ resposive
   position: fixed;
 }
 
-@media (max-width: 450px) {
+/*
+PC
+*/
+@media (min-width : 1326px) and (max-width : 1440px) and (min-height : 700px) and (max-height : 900px) {
   body {
-    font-size: 7px;
+    font-size: 10.5px;
   }
+}
 
-  .titulos {
-    padding: 2% 0;
+@media (min-width : 1880px) and (max-width : 1920px) and (min-height : 1000px) and (max-height : 1080px) {
+  body {
+    font-size: 15px;
   }
+}
 
-  .texto {
-    padding: 2% 0;
-  }
-
-  .margenes {
-    height: 100%;
-    width: 90%;
-    margin: auto;
-    display: flow;
-    padding-top: 5%;
-  }
-
-  .centrado {
-    height: 90%;
-    width: 100%;
-    display: inline-grid;
-    align-items: center;
+/*
+Moviles
+*/
+@media (min-width : 360px) and (max-width : 375px) and (min-height : 620px) and (max-height : 667px) {
+  body {
+    font-size: 7.5px;
   }
 
   #sectionPrincipal {
@@ -422,29 +513,12 @@ resposive
   }
 
   .novios {
-    margin-top: 16em;
-    ;
-  }
-
-  .banner {
-    margin-bottom: 30px;
-  }
-
-  .cartel {
-    height: 80px;
-    width: 100px;
-    padding: 0;
-    margin: 1%;
-  }
-
-  .cartel>div>h3 {
-    font-size: 1em;
-    margin-top: 0px;
+    margin-top: 18em;
   }
 
   .contenedor {
     padding-left: 0;
-    padding-top: 15%;
+    padding-top: 6%;
     margin: 0;
   }
 
@@ -456,25 +530,28 @@ resposive
     display: block;
   }
 
+  .cartel {
+    height: 7em;
+    width: 15em;
+    padding: 0;
+    margin: 1%;
+  }
+
+  .cartel>div {
+    font-size: 2em;
+    margin-top: 0px;
+  }
+
+  .cartel>div>h3 {
+    margin-top: 0px;
+  }
+
   .papas {
-    padding: 5% 0;
-    gap: 0;
-  }
-
-  .cruz {
-    width: 25px;
-  }
-
-  .separador {
-    width: 100%;
+    grid-template-rows: 4em 3em 3em;
   }
 
   .diosito {
     padding: 50% 1%;
-  }
-
-  .imgFondo {
-    height: 100vh;
   }
 
   .imgMarco {
@@ -482,19 +559,41 @@ resposive
   }
 
   .padrinos {
-    gap: 1% 0;
-  }
-
-  .seccionItinerario {
-    height: 100vh;
-  }
-
-  .itinerario {
-    height: 83vh;
+    grid-template-rows: 2.9em 3em 2.9em 3em 2.9em 3em;
   }
 
   .itinerarioTamano {
-    font-size: 7em;
+    padding-top: 5%;
+  }
+
+  .seccionItinerario {
+    height: 200vh;
+  }
+
+  .divItinerario {
+    height: 90vh;
+    grid-template-rows: 7em 27em 27em 27em 27em 10em 16em;
+    padding-top: 10%;
+  }
+
+  .informacion {
+    width: 100%;
+  }
+
+  .lineaHorizontal {
+    left: 91%;
+    bottom: 0;
+    top: 4%;
+  }
+
+  .lineaHorizontalDer {
+    right: 12%;
+    bottom: 0;
+    top: 4%;
+  }
+
+  .finEvento {
+    width: 51%;
   }
 
   .eventos {
@@ -521,7 +620,7 @@ resposive
   a {
     width: 100%;
     height: 100%;
-
+    margin-top: 5%;
   }
 
   .carousel {
@@ -543,64 +642,79 @@ resposive
     width: 10%;
     margin: 5% 45%;
   }
-}
 
-@media (height > 700px) and (width <1000px) {
-  .titulos {
-    font-size: 6em;
-    padding: 4% 0;
+  iframe {
+    width: 90%;
   }
 
-  .texto {
-    font-size: 4em;
-    padding: 4% 0;
+}
+
+@media (min-width : 376px) and (max-width : 547px) and (min-height : 668px) and (max-height : 973px) {
+  body {
+    font-size: 10px;
+  }
+
+  #sectionPrincipal {
+    background-image: url("Medios/fondoPrincipal.svg");
+  }
+
+  #imgPrincipal {
+    object-fit: scale-down;
+  }
+
+  h2 {
+    padding: 0;
+    left: 0;
+  }
+
+  .tamano {
+    font-size: 6em;
+  }
+
+  .novios {
+    margin-top: 21em;
+  }
+
+  .contenedor {
+    padding-left: 0;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .responsivo1 {
+    display: block;
+  }
+
+  .responsivo2 {
+    display: block;
+  }
+
+  .cartel {
+    height: 7em;
+    width: 14em;
+    padding: 0;
+    margin: 1%;
+  }
+
+  .cartel>div {
+    font-size: 2em;
+    margin-top: 0px;
+  }
+
+  .cartel>div>h3 {
+    margin-top: 0px;
   }
 
   .papas {
-    gap: 3% 0;
+    grid-template-rows: 4em 3em 3em;
+    grid-template-columns: 50% 50%;
   }
 
-  .padrinos {
-    gap: 2% 0;
-    grid-template-rows: 80px 120px 80px 120px 80px 120px;
+  .cruz {
+    width: 1em;
+    height: 1em;
   }
 
-  .itinerarioTamano {
-    font-size: 9em;
-  }
-
-  .itinerario {
-    height: 71vh;
-    object-fit: cover;
-  }
-
-  .ubicacion2 a {
-    margin-top: 6%;
-  }
-}
-
-@media all and (orientation:portrait) {
-  main {
-    display: inline-block;
-  }
-
-  #landscape {
-    display: none;
-  }
-}
-@media (width > 1300px) and (height <800px) {
-  .texto{
-    font-size: 2.5em;
-  }
-  .titulos{
-    font-size: 4.5em;
-  }
-  .padrinos{
-    gap: 1%;
-  }
-  .reglas{
-    font-size: 3.5em;
-  }
   .margenes {
     height: 100%;
     width: 95%;
@@ -608,16 +722,279 @@ resposive
     display: flow;
     padding-top: 1%;
   }
+
   .separador {
     width: 100%;
     height: auto;
     padding: 1% 0;
   }
-  iframe{
-    height: 375px;
+
+  .diosito {
+    padding: 50% 1%;
+  }
+
+  .padrinos {
+    grid-template-rows: 2.9em 4em 2.9em 4em 2.9em 4em;
+    gap: 0;
+    margin: 4% 0;
+  }
+
+  .itinerarioTamano {
+    padding-top: 5%;
+  }
+
+  .divItinerario {
+    height: 180vh;
+    width: 99vw;
+    grid-template-rows: 7em 27em 27em 27em 27em 10em 16em;
+    padding-top: 10%;
+  }
+
+  .informacion {
+    width: 100%;
+  }
+
+  .lineaHorizontal {
+    left: 91%;
+    bottom: 0;
+    top: 4%;
+  }
+
+  .lineaHorizontalDer {
+    right: 12%;
+    bottom: 0;
+    top: 4%;
+  }
+
+  .finEvento {
+    width: 51%;
+  }
+
+  .eventos {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 89%;
+  }
+
+  .evento{
+    width: 80%;
+  }
+
+  .imgEvento {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .ubicacion {
+    display: none;
+  }
+
+  .ubicacion2 {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+  }
+
+  .carousel {
+    height: auto;
+    width: 99%;
+    z-index: 2;
+    display: flex;
+    margin: 20% auto;
+  }
+
+  .imgCarousel {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .seccionReglas{
+    height: 112vh;
+  }
+
+  .regalo {
+    height: auto;
+    width: 10%;
+    margin: 5% 45%;
+  }
+
+  iframe {
+    width: 90%;
+    height: 41%;
   }
 }
-@media (min-width: 500px) and (orientation:landscape) {
+
+@media (min-width : 548px) and (max-width : 720px) and (min-height : 974px) and (max-height : 1280px) {
+  body {
+    font-size: 15px;
+  }
+
+  #sectionPrincipal {
+    background-image: url("Medios/fondoPrincipal.svg");
+  }
+
+  #imgPrincipal {
+    object-fit: scale-down;
+  }
+
+  h2 {
+    padding: 0;
+    left: 0;
+  }
+
+  .tamano {
+    font-size: 7em;
+  }
+
+  .novios {
+    margin-top: 18em;
+  }
+
+  .contenedor {
+    padding-left: 0;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .responsivo1 {
+    display: block;
+  }
+
+  .responsivo2 {
+    display: block;
+  }
+
+  .cartel {
+    height: 7em;
+    width: 15em;
+    padding: 0;
+    margin: 1%;
+  }
+
+  .cartel>div {
+    font-size: 2em;
+    margin-top: 0px;
+  }
+
+  .cartel>div>h3 {
+    margin-top: 0px;
+  }
+
+  .papas {
+    grid-template-rows: 4em 3em 3em;
+  }
+
+  .diosito {
+    padding: 50% 1%;
+  }
+
+  .padrinos {
+    grid-template-rows: 2.9em 3em 2.9em 3em 2.9em 3em;
+  }
+
+  .itinerarioTamano {
+    padding-top: 5%;
+  }
+
+  .seccionItinerario {
+    height: 200vh;
+  }
+
+  .divItinerario {
+    height: 90vh;
+    grid-template-rows: 7em 27em 27em 27em 27em 10em 16em;
+    padding-top: 10%;
+  }
+
+  .informacion {
+    width: 100%;
+  }
+
+  .lineaHorizontal {
+    left: 91%;
+    bottom: 0;
+    top: 4%;
+  }
+
+  .lineaHorizontalDer {
+    right: 12%;
+    bottom: 0;
+    top: 4%;
+  }
+
+  .finEvento {
+    width: 51%;
+  }
+
+  .eventos {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .imgEvento {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .ubicacion {
+    display: none;
+  }
+
+  .ubicacion2 {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 2%;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+  }
+
+  .carousel {
+    height: auto;
+    width: 99%;
+    z-index: 2;
+    display: flex;
+    margin: 20% auto;
+  }
+
+  .imgCarousel {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .regalo {
+    height: auto;
+    width: 10%;
+    margin: 5% 45%;
+  }
+
+  iframe {
+    width: 90%;
+  }
+
+}
+
+/*
+Dispositivos en landScape
+*/
+@media (min-width: 360px) and (max-width : 932px) and (orientation:landscape) {
+  body {
+    font-size: 16px;
+  }
+
   main {
     display: none;
   }
@@ -631,7 +1008,17 @@ resposive
   }
 }
 
-@media (width > 1000px) and (orientation:landscape) {
+@media (min-width: 1300px) and (orientation:landscape) {
+  main {
+    display: inline-block;
+  }
+
+  #landscape {
+    display: none;
+  }
+}
+
+@media all and (orientation:portrait) {
   main {
     display: inline-block;
   }
