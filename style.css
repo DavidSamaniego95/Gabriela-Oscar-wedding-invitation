@@ -8,13 +8,16 @@
   src: url(Medios/gistesy/Gistesy.ttf);
 }
 
+html{
+  font-size: 16px;
+}
+
 body {
-  min-height: 100vh;
-  min-width: 100vw;
   display: inline-block;
   background: white;
   font-size: 16px;
-  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .fuente1 {
@@ -472,33 +475,37 @@ resposive
 /*
 PC
 */
-@media (min-width : 1326px) and (max-width : 1440px) and (min-height : 700px) and (max-height : 900px) {
+@media (max-width : 1920px) and (max-height : 1080px) {
+  html{
+    font-size: 15px;
+  }
   body {
-    font-size: 10.5px;
-    min-width: 1326px;
-    max-width: 1440px;
-    min-height: 700px;
+    font-size: 15px;
   }
 }
 
-@media (min-width : 1880px) and (max-width : 1920px) and (min-height : 1000px) and (max-height : 1080px) {
+@media (max-width : 1440px) and (max-height : 900px) {
+  html{
+    font-size: 10.5px;
+  }
   body {
-    font-size: 15px;
-    min-width: 1880px;
-    max-width: 1920px;
-    min-height: 1000px;
+    font-size: 10.5px;
   }
 }
 
 /*
 Moviles
 */
-@media (min-width : 320px) and (max-width : 359px) and (min-height : 568px)  and (orientation:portrait) {
+@media (max-width : 1080px) and (orientation:portrait) {
+  html{
+    font-size: 26px;
+  }
   body {
-    font-size: 7px;
-    min-width: 320px;
-    max-width: 359px;
-    min-height: 568px;
+    font-size: 26px;
+  }
+
+  .centrado{
+    padding-top: 1%;
   }
 
   #sectionPrincipal {
@@ -519,7 +526,7 @@ Moviles
   }
 
   .centrado{
-    grid-template-rows: 10em 45em 25em;
+    grid-template-rows: 15em 45em 25em;
   }
 
   .novios {
@@ -528,7 +535,177 @@ Moviles
 
   .contenedor {
     padding-left: 0;
-    padding-top: 2%;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .responsivo1 {
+    display: block;
+  }
+
+  .responsivo2 {
+    display: block;
+  }
+
+  .cartel {
+    height: 7em;
+    width: 15em;
+    padding: 0;
+    margin: 1%;
+  }
+
+  .cartel>div {
+    font-size: 2em;
+    margin-top: 0px;
+  }
+
+  .cartel>div>h3 {
+    margin-top: 0px;
+  }
+
+  .divAudio{
+    z-index: 5;
+  }
+
+  .papas {
+    grid-template-rows: 4em 3em 3em;
+  }
+
+  .margenes{
+    padding-top: 10%;
+  }
+
+  .diosito {
+    padding: 50% 1%;
+  }
+
+  .padrinos {
+    grid-template-rows: 3em 4em 3em 4em 3em 4.5em;
+    width: 98%;
+  }
+
+  .seccionItinerario {
+    height: 180vh;
+  }
+
+  .itinerarioTamano {
+    padding-top: 5%;
+  }
+
+  .divItinerario {
+    height: 181vh;
+    grid-template-rows: 7em 27em 27em 27em 27em 10em 16em;
+    padding-top: 10%;
+  }
+
+  .informacion {
+    width: 100%;
+  }
+
+  .lineaHorizontal {
+    left: 91%;
+    bottom: 0;
+    top: 4%;
+  }
+
+  .lineaHorizontalDer {
+    right: 12%;
+    bottom: 0;
+    top: 4%;
+  }
+
+  .finEvento {
+    width: 51%;
+  }
+
+  .eventos {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .evento{
+    width: 70%;
+  }
+
+  .imgEvento {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .ubicacion {
+    display: none;
+  }
+
+  .ubicacion2 {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 2%;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+  }
+
+  .carousel {
+    height: auto;
+    width: 99%;
+    z-index: 2;
+    display: flex;
+    margin: 20% auto;
+  }
+
+  .imgCarousel {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .regalo {
+    height: auto;
+    width: 10%;
+    margin: 5% 45%;
+  }
+
+  iframe {
+    width: 90%;
+  }
+
+}
+@media (max-width : 720px) and (orientation:portrait) {
+  html{
+    font-size: 15px;
+  }
+  body {
+    font-size: 15px;
+  }
+
+  #sectionPrincipal {
+    background-image: url("Medios/fondoPrincipal.svg");
+  }
+
+  #imgPrincipal {
+    object-fit: scale-down;
+  }
+
+  h2 {
+    padding: 0;
+    left: 0;
+  }
+
+  .tamano {
+    font-size: 7em;
+  }
+
+  .novios {
+    margin-top: 18em;
+  }
+
+  .contenedor {
+    padding-left: 0;
+    padding-top: 0;
     margin: 0;
   }
 
@@ -562,10 +739,6 @@ Moviles
 
   .diosito {
     padding: 50% 1%;
-  }
-
-  .imgMarco {
-    display: none;
   }
 
   .padrinos {
@@ -658,179 +831,12 @@ Moviles
   }
 
 }
-
-@media (min-width : 360px) and (max-width : 375px) and (min-height : 620px) and (max-height : 667px) and (orientation:portrait) {
-  body {
-    font-size: 7.5px;
-    min-width: 360px;
-    max-width: 375px;
-    min-height: 620px;
+@media (max-width : 540px) and (orientation:portrait) {
+  html{
+    font-size: 10px;
   }
-
-  #sectionPrincipal {
-    background-image: url("Medios/fondoPrincipal.svg");
-  }
-
-  #imgPrincipal {
-    object-fit: scale-down;
-  }
-
-  h2 {
-    padding: 0;
-    left: 0;
-  }
-
-  .tamano {
-    font-size: 7em;
-  }
-
-  .novios {
-    margin-top: 18em;
-  }
-
-  .centrado{
-    grid-template-rows: 10em 50em 25em;
-  }
-
-  .contenedor {
-    padding-left: 0;
-    padding-top: 6%;
-    margin: 0;
-  }
-
-  .responsivo1 {
-    display: block;
-  }
-
-  .responsivo2 {
-    display: block;
-  }
-
-  .cartel {
-    height: 7em;
-    width: 15em;
-    padding: 0;
-    margin: 1%;
-  }
-
-  .cartel>div {
-    font-size: 2em;
-    margin-top: 0px;
-  }
-
-  .cartel>div>h3 {
-    margin-top: 0px;
-  }
-
-  .papas {
-    grid-template-rows: 4em 3em 3em;
-  }
-
-  .diosito {
-    padding: 50% 1%;
-  }
-
-  .imgMarco {
-    display: none;
-  }
-
-  .padrinos {
-    grid-template-rows: 2.9em 3em 2.9em 3em 2.9em 3em;
-  }
-
-  .itinerarioTamano {
-    padding-top: 5%;
-  }
-
-  .seccionItinerario {
-    height: 200vh;
-  }
-
-  .divItinerario {
-    height: 90vh;
-    grid-template-rows: 7em 27em 27em 27em 27em 10em 16em;
-    padding-top: 10%;
-  }
-
-  .informacion {
-    width: 100%;
-  }
-
-  .lineaHorizontal {
-    left: 91%;
-    bottom: 0;
-    top: 4%;
-  }
-
-  .lineaHorizontalDer {
-    right: 12%;
-    bottom: 0;
-    top: 4%;
-  }
-
-  .finEvento {
-    width: 51%;
-  }
-
-  .eventos {
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-  }
-
-  .imgEvento {
-    width: 1.5em;
-    height: 1.5em;
-  }
-
-  .ubicacion {
-    display: none;
-  }
-
-  .ubicacion2 {
-    display: flex;
-    height: auto;
-    width: auto;
-    margin: 2%;
-  }
-
-  a {
-    width: 100%;
-    height: 100%;
-    margin-top: 5%;
-  }
-
-  .carousel {
-    height: auto;
-    width: 99%;
-    z-index: 2;
-    display: flex;
-    margin: 20% auto;
-  }
-
-  .imgCarousel {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  .regalo {
-    height: auto;
-    width: 10%;
-    margin: 5% 45%;
-  }
-
-  iframe {
-    width: 90%;
-  }
-
-}
-
-@media (min-width : 376px) and (max-width : 547px) and (min-height : 668px) and (max-height : 973px) and (orientation:portrait) {
   body {
     font-size: 10px;
-    min-width: 376px;
-    max-width: 547px;
-    min-height: 668px;
   }
 
   #sectionPrincipal {
@@ -1014,13 +1020,12 @@ Moviles
     height: 41%;
   }
 }
-
-@media (min-width : 548px) and (max-width : 720px) and (min-height : 974px) and (max-height : 1280px) and (orientation:portrait) {
+@media (max-width : 360px) and (orientation:portrait) {
+  html{
+    font-size: 7.5px;
+  }
   body {
-    font-size: 15px;
-    min-width: 548px;
-    max-width: 720px;
-    min-height: 974px;
+    font-size: 7.5px;
   }
 
   #sectionPrincipal {
@@ -1044,9 +1049,13 @@ Moviles
     margin-top: 18em;
   }
 
+  .centrado{
+    grid-template-rows: 10em 50em 25em;
+  }
+
   .contenedor {
     padding-left: 0;
-    padding-top: 0;
+    padding-top: 6%;
     margin: 0;
   }
 
@@ -1080,6 +1089,10 @@ Moviles
 
   .diosito {
     padding: 50% 1%;
+  }
+
+  .imgMarco {
+    display: none;
   }
 
   .padrinos {
@@ -1172,15 +1185,12 @@ Moviles
   }
 
 }
-
-@media (min-width : 1080px) and (max-height : 2340px) and (orientation:portrait) {
-  body {
-    font-size: 26px;
-    min-width: 1080px;
+@media (max-width : 320px) and (orientation:portrait) {
+  html{
+    font-size: 7px;
   }
-
-  .centrado{
-    padding-top: 1%;
+  body {
+    font-size: 7px;
   }
 
   #sectionPrincipal {
@@ -1201,7 +1211,7 @@ Moviles
   }
 
   .centrado{
-    grid-template-rows: 15em 45em 25em;
+    grid-template-rows: 10em 45em 25em;
   }
 
   .novios {
@@ -1210,7 +1220,7 @@ Moviles
 
   .contenedor {
     padding-left: 0;
-    padding-top: 0;
+    padding-top: 2%;
     margin: 0;
   }
 
@@ -1238,37 +1248,32 @@ Moviles
     margin-top: 0px;
   }
 
-  .divAudio{
-    z-index: 5;
-  }
-
   .papas {
     grid-template-rows: 4em 3em 3em;
-  }
-
-  .margenes{
-    padding-top: 10%;
   }
 
   .diosito {
     padding: 50% 1%;
   }
 
-  .padrinos {
-    grid-template-rows: 3em 4em 3em 4em 3em 4.5em;
-    width: 98%;
+  .imgMarco {
+    display: none;
   }
 
-  .seccionItinerario {
-    height: 180vh;
+  .padrinos {
+    grid-template-rows: 2.9em 3em 2.9em 3em 2.9em 3em;
   }
 
   .itinerarioTamano {
     padding-top: 5%;
   }
 
+  .seccionItinerario {
+    height: 200vh;
+  }
+
   .divItinerario {
-    height: 181vh;
+    height: 90vh;
     grid-template-rows: 7em 27em 27em 27em 27em 10em 16em;
     padding-top: 10%;
   }
@@ -1296,10 +1301,6 @@ Moviles
   .eventos {
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
-  }
-
-  .evento{
-    width: 70%;
   }
 
   .imgEvento {
@@ -1349,15 +1350,18 @@ Moviles
   }
 
 }
-
 /*
 Dispositivos en landScape
 */
-@media (min-width: 360px) and (max-width : 1080px) and (orientation:landscape) {
-  body {
-    font-size: 16px;
+@media all and (orientation:portrait) {
+  main {
+    display: inline-block;
   }
-
+  #landscape {
+    display: none;
+  }
+}
+@media (max-width : 1080px) and (orientation:landscape) {
   main {
     display: none;
   }
@@ -1370,22 +1374,10 @@ Dispositivos en landScape
     position: fixed;
   }
 }
-
 @media (min-width: 1300px) and (orientation:landscape) {
   main {
     display: inline-block;
   }
-
-  #landscape {
-    display: none;
-  }
-}
-
-@media all and (orientation:portrait) {
-  main {
-    display: inline-block;
-  }
-
   #landscape {
     display: none;
   }
