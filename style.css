@@ -582,6 +582,10 @@ Moviles
     margin-top: 0px;
   }
 
+  .imgMarco{
+    display: none;
+  }
+
   .papas {
     padding: 3% 0;
     grid-template-rows: 4em 3em 3em;
@@ -695,8 +699,8 @@ Moviles
 
   iframe {
     padding-top: 5%;
-    width: 90%;
-    height: 50%;
+    width: 100%;
+    height: 55%;
   }
 
 }
